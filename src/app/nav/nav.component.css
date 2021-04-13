@@ -1,0 +1,25 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 150px;
+  background: linear-gradient(90deg, rgba(68,76,84,1) 0%, rgba(60,171,211,1) 58%);
+  border-style: none;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar{background: rgb(60,171,211);
+  background: linear-gradient(90deg, rgba(60,171,211,1) 0%, rgba(68,76,84,1) 58%);}
+
+.logo{height: 40px; opacity: 0.78;}  
+

@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      attr.role="dialog"
+      mode="over"
+      opened="false">
+      
+    <mat-toolbar>Main Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">//What We Do</a>
+      <a mat-list-item href="#">//Services</a>
+      <a mat-list-item href="#">//Work SHop</a>
+      <a mat-list-item href="#">//Get In Touch</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <ul class="nav flex-grow-1 justify-content-between">
+        <li>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        </li>
+        <li> <span>Leading Tech</span></li>
+        <li> <img class="logo" src="..\assets\images\V2pureimage.png" ></li>
+      </ul>
+     
+
+    </mat-toolbar>
+   <!--landing page content, all content for main landing goes here-->
+   <app-content></app-content>
+   <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
