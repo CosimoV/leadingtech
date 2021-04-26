@@ -106,3 +106,4 @@
     font-family: "Poppins", sans-serif;
     color: #3f97a7;
   }
+  .nav-link:hover{cursor: pointer;}

@@ -6,10 +6,10 @@
       
     <mat-toolbar>Main Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">//What We Do</a>
-      <a mat-list-item href="#">//Services</a>
-      <a mat-list-item href="#">//Work SHop</a>
-      <a mat-list-item href="#">//Get In Touch</a>
+      <nav><a mat-list-item  routerLink="/what-we-do" routerLinkActive="routerLinkActive">//What We Do</a></nav>
+      <nav><a mat-list-item  routerLink="/services" routerLinkActive="routerLinkActive">//Services</a></nav>
+      <a mat-list-item  routerLink="/workshop"routerLink="/workshop" routerLinkActive="routerLinkActive">//Work SHop</a>
+      <a mat-list-item routerLink="/contact" routerLinkActive="routerLinkActive" >//Get In Touch</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,13 +26,15 @@
         </button>
         </li>
         <li> <span>Leading Tech</span></li>
-        <li> <img class="logo" src="/assets/images/V2pureimage.png" ></li>
+        <li> <img class="logo" src="..\assets\images\V2pureimage.png" ></li>
       </ul>
      
 
     </mat-toolbar>
    <!--landing page content, all content for main landing goes here-->
-   <app-content></app-content>
+  
+   <router-outlet></router-outlet>
    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
